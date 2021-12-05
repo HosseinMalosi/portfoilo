@@ -1,0 +1,112 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css);
+
+// mixin
+@mixin h-for-home {
+  font-family: $sub_font;
+  color: $third_dark;
+  font-weight: lighter;
+}
+
+// font face
+@font-face {
+  font-family: B_nazanin;
+  src: url(fonts/Far_Nazanin.ttf);
+}
+@font-face {
+  font-family: lalezar;
+  src: url(fonts/Lalezar-Regular.ttf);
+}
+// font family
+$main_font: B_nazanin;
+$sub_font: lalezar;
+
+// fonts-sizes
+$xl_font: 30px;
+$md_font: 22px;
+$sm_font: 18px;
+
+// colors
+$first_dark: #151515;
+$second_dark: #191a19;
+$third_dark: #1e5128;
+$first_green: #a7d129;
+
+// pre classes
+.hidden {
+  display: none;
+}
+
+.active {
+  color: $third_dark;
+  border-bottom: 3px solid $third_dark;
+}
+
+.link {
+  color: $third_dark;
+  font-size: $sm_font;
+  font-family: $main_font;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+}
+//  start
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  direction: rtl;
+}
+body {
+  background-color: $second_dark;
+  height: 100vh;
+  margin: 0 50px;
+}
+nav {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  justify-content: space-around;
+  width: 300px;
+  padding-top: 30px;
+
+  a {
+    width: 90px;
+    height: 30px;
+  }
+}
+main {
+  height: 100vh;
+  padding-top: 70px;
+  position: relative;
+}
+#Home {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 2fr 3fr;
+}
+#intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  h1,
+  h2 {
+    @include h-for-home();
+  }
+  h1 {
+    font-size: 2em;
+  }
+}
+#information {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  grid-template-rows:  4fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
