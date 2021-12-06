@@ -9,6 +9,11 @@
   src: url(fonts/Lalezar-Regular.ttf);
 }
 
+@font-face {
+  font-family: MJ;
+  src: url(fonts/Mj_Promoter_0.ttf);
+}
+
 .hidden {
   display: none;
 }
@@ -69,6 +74,7 @@ main {
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-template-rows: 2fr 3fr;
+  column-gap: 20px;
 }
 
 #intro {
@@ -83,19 +89,35 @@ main {
 #intro h2 {
   font-family: lalezar;
   color: #1e5128;
+  font-size: 30px;
   font-weight: lighter;
 }
 
 #intro h1 {
-  font-size: 2em;
+  font-size: 3em;
 }
 
-#information {
+#card-box {
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 250px;
-  grid-template-rows: 4fr 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  padding: 20px;
+  width: 400px;
+  height: 90%;
+  background: linear-gradient(214deg, rgba(6, 6, 8, 0.711922) 16%, rgba(6, 6, 8, 0.437412) 42%, rgba(11, 89, 20, 0.513043) 93%, rgba(9, 75, 15, 0) 100%);
+  border-radius: 20%;
+}
+
+#card-box div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  border-radius: 20%;
+  background: transparent;
+  backdrop-filter: blur(20px);
 }
 /*# sourceMappingURL=style.css.map */
