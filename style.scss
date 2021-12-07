@@ -1,13 +1,5 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css);
 
-// mixin
-@mixin h-for-home {
-  font-family: $sub_font;
-  color: $third_dark;
-  font-size: $xl_font;
-  font-weight: lighter;
-}
-
 // font face
 @font-face {
   font-family: B_nazanin;
@@ -31,10 +23,18 @@ $md_font: 22px;
 $sm_font: 18px;
 
 // colors
-$first_dark: #151515;
-$second_dark: #191a19;
-$third_dark: #1e5128;
-$first_green: #a7d129;
+$first_color: #222831;
+$second_color: #393e46;
+$third_color: rgb(202, 202, 202);
+$fourth_color: #00adb5;
+
+// mixin
+@mixin h-for-home {
+  font-family: $sub_font;
+  color: $third_color;
+  font-size: $xl_font;
+  font-weight: lighter;
+}
 
 // pre classes
 .hidden {
@@ -42,12 +42,12 @@ $first_green: #a7d129;
 }
 
 .active {
-  color: $third_dark;
-  border-bottom: 3px solid $third_dark;
+  color: $fourth_color;
+  border-bottom: 3px solid $fourth_color;
 }
 
 .link {
-  color: $third_dark;
+  color: $third_color;
   font-size: $sm_font;
   font-family: $main_font;
   text-decoration: none;
@@ -66,7 +66,7 @@ html {
   direction: rtl;
 }
 body {
-  background-color: $second_dark;
+  background-color: $first_color;
   height: 100vh;
   margin: 0 50px;
 }
@@ -90,15 +90,16 @@ main {
 }
 #Home {
   display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-template-rows: 2fr 3fr;
-  column-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 10px;
+  padding-top: 100px;
 }
-#intro {
+#intro-box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: start;
+  max-width: 550px;
   height: 100%;
   h1,
   h2 {
@@ -108,32 +109,25 @@ main {
     font-size: 3em;
   }
 }
-#card-box {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
-  padding: 20px;
-  width: 400px;
-  height: 90%;
-  background: linear-gradient(
-    214deg,
-    rgba(6, 6, 8, 0.711922268907563) 16%,
-    rgba(6, 6, 8, 0.4374124649859944) 42%,
-    rgba(11, 89, 20, 0.5130427170868348) 93%,
-    rgba(9, 75, 15, 0) 100%
-  );
-  border-radius: 20%;
+#description-box {
+  margin-top: 30px;
+  text-align: justify;
+}
+#description-text {
+  font-family: $main_font;
+  font-size: $sm_font;
+  color: $third_color;
+  font-weight: bold;
+  line-height: 1.8;
+}
 
-  div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    border-radius: 20%;
-    background: transparent;
-    backdrop-filter: blur(20px);
-  }
+#card-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-row-gap: 20px;
+  justify-self: center;
+  align-items: center;
+  height: 50%;
+  width: 80%;
 }
