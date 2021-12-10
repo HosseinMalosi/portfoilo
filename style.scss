@@ -40,7 +40,7 @@ $five_color: #00fff5;
 
 // pre classes
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .active {
@@ -90,7 +90,7 @@ main {
   padding-top: 70px;
   position: relative;
 }
-#Home {
+#homeM {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
