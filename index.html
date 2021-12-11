@@ -9,11 +9,11 @@
   </head>
   <body>
     <nav>
-      <a href="#" id="homeBTN" class="link active">خانه</a>
-      <a href="#" id="aboutBTN" class="link">درباره من</a>
+      <a href="#" id="homeBTN" class="link">خانه</a>
+      <a href="#" id="aboutBTN" class="link active">درباره من</a>
       <a href="#" id="contactBTN" class="link">ارتباط با من</a>
     </nav>
-    <main id="homeM">
+    <main id="homeM" class="hidden">
       <section id="intro-box">
         <h1>سلام✋</h1>
         <h2>من حسین ملوسی یک توسعه دهنده وب هستم😉</h2>
@@ -43,12 +43,22 @@
         <footer id="card-footer">
           <a href="#" class="link_icons"><img src="instagram.png" alt="" /></a>
           <a href="#" class="link_icons"><img src="instagram.png" alt="" /></a>
-          <a href="#" class="link_icons"><img src="instagram.png" alt="" /></a> 
+          <a href="#" class="link_icons"><img src="instagram.png" alt="" /></a>
           <a href="#" class="link_icons"><img src="instagram.png" alt="" /></a>
         </footer>
       </section>
     </main>
-    <main id="aboutM" class="hidden"></main>
+    <main id="aboutM">
+      <section id="myKnowledge" class="aboutBoxs">
+        <header class="aboutBoxHeader"><h2>تخصص های من</h2></header>
+        <ul class="aboutUnorder">
+          <li>جاوا اسکریپت</li>
+          <li>html/css</li>
+          <li>sass/scss</li>
+        </ul>
+      </section>
+      <section id="myProjects" class="aboutBoxs"></section>
+    </main>
     <main id="contactM" class="hidden"></main>
   </body>
   <script src="portfoilo.js"></script>

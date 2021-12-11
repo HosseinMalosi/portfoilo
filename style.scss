@@ -56,6 +56,8 @@ $five_color: #00fff5;
   font-weight: 600;
   text-align: center;
 }
+//////////////////
+
 //  start
 *,
 *::after,
@@ -72,6 +74,7 @@ body {
   height: 100vh;
   margin: 0 50px;
 }
+// navbar
 nav {
   display: flex;
   position: absolute;
@@ -85,11 +88,13 @@ nav {
     height: 30px;
   }
 }
+//////////////////////
 main {
   height: 100vh;
   padding-top: 70px;
   position: relative;
 }
+// first container
 #homeM {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -97,6 +102,7 @@ main {
   column-gap: 10px;
   padding-top: 100px;
 }
+// right home box
 #intro-box {
   display: flex;
   flex-direction: column;
@@ -122,7 +128,9 @@ main {
   font-weight: bold;
   line-height: 1.8;
 }
+////////////////////
 
+// left home box
 #card-section {
   display: grid;
   grid-template-columns: 1fr;
@@ -207,5 +215,48 @@ main {
   &:hover {
     transform: translateY(-10px);
     box-shadow: 0px 5px 7px 0px rgba(0, 255, 245, 0.5);
+  }
+}
+///////////////////
+//////////////////////////
+
+#aboutM {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.aboutBoxs {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(23, 142, 148);
+  width: 40%;
+  height: 70%;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+.aboutBoxHeader {
+  padding: 5px 20px;
+  border-right: 5px double $first_color;
+
+  h2 {
+    color: $first_color;
+    font-size: $xl_font;
+    font-family: $sub_font;
+    font-weight: lighter;
+  }
+}
+
+.aboutUnorder {
+  height: 40%;
+  list-style-position: inside;
+  margin-top: 20px;
+  li {
+    margin:10px 0;
+    width: fit-content;
+    color: $first_color;
+    font-family: $main_font,sans-serif;
+    font-weight: bold;
+    font-size: $sm_font;
   }
 }

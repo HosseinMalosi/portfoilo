@@ -191,4 +191,47 @@ main {
   transform: translateY(-10px);
   box-shadow: 0px 5px 7px 0px rgba(0, 255, 245, 0.5);
 }
+
+#aboutM {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.aboutBoxs {
+  display: flex;
+  flex-direction: column;
+  background-color: #178e94;
+  width: 40%;
+  height: 70%;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+
+.aboutBoxHeader {
+  padding: 5px 20px;
+  border-right: 5px double #222831;
+}
+
+.aboutBoxHeader h2 {
+  color: #222831;
+  font-size: 30px;
+  font-family: lalezar;
+  font-weight: lighter;
+}
+
+.aboutUnorder {
+  height: 40%;
+  list-style-position: inside;
+  margin-top: 20px;
+}
+
+.aboutUnorder li {
+  margin: 10px 0;
+  width: fit-content;
+  color: #222831;
+  font-family: B_nazanin, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
 /*# sourceMappingURL=style.css.map */
