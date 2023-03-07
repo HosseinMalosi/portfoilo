@@ -35,10 +35,10 @@ const Home = () => {
                   <Linkedin />
                 </a>
                 <a
-                  className="bg-slate-300 text-green-600 fill-black p-1 rounded text-3xl hover:shadow-lg"
+                  className="bg-slate-300 text-green-600 p-1 rounded text-3xl hover:shadow-lg"
                   href=""
                 >
-                  <Whatsapp/>
+                  <Whatsapp />
                 </a>
               </div>
             </div>
@@ -49,8 +49,19 @@ const Home = () => {
             />
           </div>
         </GlassyCard>
-        <GlassyCard className="hidden lg:basis-1/3 md:basis- md:h-4/4 md:block h-1/2  bg-[rgb(53,54,129)] rounded-lg">
-          dawda
+        <GlassyCard className="hidden lg:basis-1/3 md:basis-1/3 md:h-4/4 md:block h-1/2 bg-[rgb(53,54,129)] rounded-lg text-right pt-1 pb-5 px-4">
+          
+            <h1 className=" font-[BARAN] font-semibold text-[26px]">
+              : درباره ی من
+            </h1>
+            <article className=" text-right text-lg">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
+              ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+              و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای
+              زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و
+              متخصصان را می طلبد
+            </article>
         </GlassyCard>
       </div>
     </div>
